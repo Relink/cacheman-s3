@@ -1,0 +1,30 @@
+{
+  "name": "cacheman-s3",
+  "version": "1.0.1",
+  "description": "S3 standalone caching library for Node.JS and also cache engine for Cacheman",
+  "author": "Ignacio Rodriguez <ignacio.rodriguez@toptal.com> for RelinkLabs",
+  "main": "./node/index",
+  "scripts": {
+    "test": "mocha ./**/*.spec.js"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "cache",
+    "s3",
+    "caching",
+    "store",
+    "ttl",
+    "cacheman"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "*",
+    "mocha": "*"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.3.3",
+    "minimatch": "^3.0.0"
+  }
+}
