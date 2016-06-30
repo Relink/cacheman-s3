@@ -21,7 +21,8 @@
   "license": "MIT",
   "devDependencies": {
     "eslint": "*",
-    "mocha": "*"
+    "mocha": "*",
+    "proxyquire": "^1.7.10"
   },
   "dependencies": {
     "aws-sdk": "^2.3.3",
