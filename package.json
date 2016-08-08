@@ -5,7 +5,8 @@
   "author": "Ignacio Rodriguez <ignacio.rodriguez@toptal.com> for RelinkLabs",
   "main": "./node/index",
   "scripts": {
-    "test": "mocha ./**/*.spec.js"
+    "test": "node_modules/.bin/mocha lib/**/*.spec.js",
+    "tdd": "node_modules/.bin/mocha lib/**/*.spec.js  --watch --colors"
   },
   "repository": {
     "type": "git"
@@ -20,9 +21,12 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "chai": "^3.5.0",
     "eslint": "*",
     "mocha": "*",
-    "proxyquire": "^1.7.10"
+    "proxyquire": "^1.7.10",
+    "sinon": "^1.17.5",
+    "sinon-chai": "^2.8.0"
   },
   "dependencies": {
     "aws-sdk": "^2.3.3",
